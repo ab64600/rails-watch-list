@@ -1,0 +1,27 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container text-center">
+    <h1 class="index-header mb-4">Movielists</h1>
+    <p>Découvrez toutes vos listes de films favoris</p>
+  </div>
+</div>
+
+<div class="container text-center mt-4">
+  <!-- Cartes des listes -->
+  <div class="row justify-content-center">
+    <% @lists.each do |list| %>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <%= image_tag "https://www.laminutegourmandeparis.com/wp-content/uploads/origine-du-popcorn-au-cinema.jpg", class: 'card-img-top' %>
+          <div class="card-body">
+            <h5 class="card-title"><%= list.name %></h5>
+            <%= link_to 'Voir la liste', list_path(list), class: 'btn btn-primary btn-block' %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="mt-4">
+    <%= link_to 'Créer une nouvelle liste', new_list_path, class: 'btn btn-success btn-lg' %>
+  </div>
+</div>

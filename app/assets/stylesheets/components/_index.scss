@@ -3,3 +3,71 @@
 @import "avatar";
 @import "form_legend_clear";
 @import "navbar";
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 200px;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+}
+
+.btn {
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color:#ffffff;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.index-container {
+  padding-top: 5rem; /* Marge en haut */
+  padding-bottom: 5rem; /* Marge en bas */
+}
+
+.index-header {
+  margin-bottom: 3rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.card-body a {
+  text-decoration: none;
+}
