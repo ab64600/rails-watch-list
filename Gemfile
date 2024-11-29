@@ -36,6 +36,10 @@ gem "jbuilder"
 # dotenv to secure api keys
 gem "dotenv-rails"
 
+#cloudinary
+gem "cloudinary"
+
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 

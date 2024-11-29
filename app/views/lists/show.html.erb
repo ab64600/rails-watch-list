@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= @list.photo.attached? ? cl_image_path(@list.photo.key) : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNFn4-2E4lAAf2T0QoXxdmSzHjYweboUoEg&s' %>);">
   <div class="container text-center">
     <h1><%= @list.name %></h1>
     <p>Films favoris</p>

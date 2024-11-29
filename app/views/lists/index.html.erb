@@ -10,7 +10,7 @@
     <% @lists.each do |list| %>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <%= image_tag "https://www.laminutegourmandeparis.com/wp-content/uploads/origine-du-popcorn-au-cinema.jpg", class: 'card-img-top' %>
+          <%= list.photo.attached? ? cl_image_tag(list.photo.key) : image_tag('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNFn4-2E4lAAf2T0QoXxdmSzHjYweboUoEg&s', height: 300, width: 400, class: 'img-fluid') %>
           <div class="card-body">
             <h5 class="card-title"><%= list.name %></h5>
             <%= link_to 'Voir la liste', list_path(list), class: 'btn btn-primary btn-block' %>
